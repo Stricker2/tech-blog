@@ -18,9 +18,12 @@
             </h1>
 
             <nav>
+                {{#if loggedIn}}
                 <a href="/dashboard">dashboard</a>
                 <button id="logout" class="blank-btn">logout</button>
+                {{else}}
                 <a  href="/login">login</a>
+                {{/if}}
             </nav>
         </header>
 
@@ -32,9 +35,9 @@
             Have a good day!
         </footer>
     </div>
-
-<script src="/javascript/logout.js"></script>
-    
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
 </body>
 
 </html>
