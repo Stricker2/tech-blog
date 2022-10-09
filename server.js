@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
 const sequelize = require('sequelize');
+const routes = require('./controllers/');
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({});
 const session = require('express-session');
@@ -31,4 +32,4 @@ const sess = {
 };
 
 app.use(session(sess));
-// app.use(routes);
+app.use(routes);
