@@ -64,6 +64,18 @@ main {
     background-color: black;
 }
 
+.post {
+    background-color: beige;
+    margin-bottom: 5%;
+    line-height: 125%;
+}
+
+.post .title {
+    font: bold;
+    font-size: 80%;
+    color: grey;
+}
+
 footer {
     border-top: 2px solid gray;
     display: flex;
